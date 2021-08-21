@@ -16,6 +16,8 @@ class MyDrawer extends StatelessWidget {
               
               padding: EdgeInsets.zero,
               child: UserAccountsDrawerHeader(
+                margin: EdgeInsets.zero,
+                decoration:BoxDecoration(color:Colors.yellow[800]),
                 accountEmail: Text("dattap@gmail.com"),
                 accountName: Text("Dattatray Patil"),
                 currentAccountPicture:
@@ -38,7 +40,7 @@ class MyDrawer extends StatelessWidget {
               leading: Icon(CupertinoIcons.profile_circled,
               color: Colors.white,
                ),
-               title: Text("Home",
+               title: Text("Profile",
                textScaleFactor: 1.2,
                style: TextStyle(
                  color: Colors.white,
@@ -47,10 +49,10 @@ class MyDrawer extends StatelessWidget {
 
             ),
             ListTile(
-              leading: Icon(CupertinoIcons.home,
+              leading: Icon(CupertinoIcons.mail_solid,
               color: Colors.white,
                ),
-               title: Text("Home",
+               title: Text("Mail",
                textScaleFactor: 1.2,
                style: TextStyle(
                  color: Colors.white,
