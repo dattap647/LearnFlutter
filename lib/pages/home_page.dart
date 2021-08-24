@@ -5,6 +5,7 @@ import 'package:flutter_catalog/models/cart.dart';
 import 'dart:convert';
 import 'package:flutter_catalog/models/catalog.dart';
 import 'package:flutter_catalog/utils/routes.dart';
+import 'package:flutter_catalog/widgets/drawer.dart';
 import 'package:flutter_catalog/widgets/home_widgets/catalog_header.dart';
 import 'package:flutter_catalog/widgets/home_widgets/catalog_list.dart';
 import 'package:velocity_x/velocity_x.dart';
@@ -18,7 +19,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   final int days = 30;
 
-  final String name = "Codepur";
+  final String name = "DATTA";
 
   final url = "https://api.jsonbin.io/b/604dbddb683e7e079c4eefd3";
 
@@ -79,7 +80,10 @@ class _HomePageState extends State<HomePage> {
                   CircularProgressIndicator().centered().expand(),
               ],
             ),
+            
           ),
-        ));
+        ),
+        drawer: MyDrawer(),
+        );
   }
 }
